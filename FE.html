@@ -1,345 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Front End </title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-  <link href="style.css">
-<style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
 
-.navbar{
-width: 100% !important;
-padding-left: 100px !important;
-}
+  <style>
 
-
-.navbar-nav:active:a {
-    color: orange ;
-}
-.navbar-brand{
-  color: black;
-}
-.bg-img {
-  /* The image used */
-  /* background-image: url("images/banner-bg.png") !important; */
-  height: 450px;
-  width: 450px;
-  background-position: center;
-  /* background-repeat: no-repeat;
-  background-size: cover; */
-
-  position: absolute;
-  top: 55px;
-  right: 0px;
-  /* padding-left: 400px; */
-  /* Needed to position the navbar */
-
-}
-.cover-text{
-  margin-top: 20%;
-  text-align: center;
-}
-
-.cover-span{
-  color: darkorange;
-  font-size:3vw;
-
-}
-.cover-button{
-  padding:2% ;
-  color: white;
-  border:none ;
-  border-radius: 25px;
-  background-color:darkorange
-}
-@media all and  (max-width: 536px){
-  .top-row{
-    display: flex;
-    flex-flow: column-reverse;
-    }
-}
-.card-img-top {
-    width: 20%;
-    height: 20%;
-}
-.section2-cards{
-  width: 18rem;
-  position:relative;
-  margin: 2%;
-}
-.vertical-row-style{
-  font-size: 20px;
-  font-weight:bold ;
-}
-.mini-image{
-  float:left;
-}
-.mini-img-para{
-  font-size:15px;
-
-}
-.author-img{
-  float:left;
-  width: 80px;
-  height: 80px;
-  margin-top:-40px;
-  margin-left: -50px;
-
-}
-
-.author-container{
-  width: 300px;
-  height:200px;
-  background: radial-gradient(at top left,rgb(244, 124, 69),rgb(241, 91, 103));
-  border-radius: 4px;
-  margin:15%;
-}
-.author-name{
-  font-style: normal;
-  font-weight:bold;
-}
-.author-para{
-  font-style: italic;
-  color:white;
-  padding-top: 30px;
-}
-@media all and  (max-width: 536px){
-  .author-card{
-    display: none;
-    }
-}
-.footer-container{
-  height: 500px;
-  margin: 0 auto;
-}
-
-</style>
+  </style>
 
 </head>
+
 <body>
 
-  <nav  class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
     <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-center">
       <ul class="navbar-nav mr-auto">
-        <li  class="nav-item active" >
+        <li class="nav-item active">
           <a class="nav-link">HOME </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" >ABOUT</a>
+          <a class="nav-link disabled">ABOUT</a>
         </li>
 
         <li class="nav-item">
-          <a id="a" class="nav-link disabled" >TESTIMONIALS</a>
+          <a id="a" class="nav-link disabled">TESTIMONIALS</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link disabled dropdown-toggle" >
+          <a class="nav-link disabled dropdown-toggle">
             DROP DOWN
           </a>
 
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" >CONTACT US</a>
+          <a class="nav-link disabled">CONTACT US</a>
         </li>
       </ul>
 
     </div>
   </nav>
 
-<!-- xs mobile , sm, tables, lg laptops -->
-  <div class="row top-row" style="background-color: rgb(224, 241, 41)">
-    <div class="col-xs-12 col-sm-6 col-lg-6">
-      <div class="cover-text">
-        <h1> Simple App that <br>  we <span class="cover-span">CREATE</span></h1>
-        <p>At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium voluptatum deleniti<br> atque corrupti quas molestias excepturi sint occaecati
-        </p>
-        <button class="cover-button">KNOW US BETTER</button>
-        <!-- <button type="button" class="btn btn-warning">Warning</button> -->
+  <!-- xs mobile , sm, tables, lg laptops -->
+  <div class="text-center">
+    <div class="row top-row">
+      <div class="col-xs-12 col-sm-6 col-lg-6">
+        <div class="cover-text">
+          <h1 style="font-weight:bold"> Simple App that <br> we <span class="cover-span">CREATE</span></h1>
+          <p>At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium voluptatum
+            deleniti<br> atque corrupti quas molestias excepturi sint occaecati
+          </p>
+          <button class="cover-button">KNOW US BETTER</button>
+          <!-- <button type="button" class="btn btn-warning">Warning</button> -->
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-lg-6">
+
+        <img style="max-width: 100%;max-height: 100%;" src="images/banner-bg.png">
+
+        </img>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-lg-6">
-      <img style="max-width: 100%;max-height: 100%;"  src="images/banner-bg.png">
+    <div class="row " style="padding-top:15%">
+      <div class="section-card-containor col-xs-12 col-sm-4 col-lg-4">
+        <div class=" section2-cards card" style="width: 18rem;">
+          <div class="text-center">
+            <div style="background-color:white ;" class="card-body">
+              <img class="card-img-top" src="images/features-icon-1.png" alt="Card image cap">
+              <h5 class="card-title">Trend Analysis</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 
-      </img>
-    </div>
-  </div>
-  <div class="text-center" >
-  <div class="row " style="background-color: rgb(237, 163, 35)">
-    <div   class=" col-xs-12 col-sm-4 col-lg-4">
-      <div class=" section2-cards card" style="width: 18rem;">
-      <div class="text-center">
-        <div style="background-color:white ;" class="card-body">
-          <img  class="card-img-top" src="images/features-icon-1.png" alt="Card image cap">
-          <h5 class="card-title">Trend Analysis</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-          <button class="cover-button">READ MORE</button>
-        </div>
+              <button class="cover-button">READ MORE</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div   class=" col-xs-12 col-sm-4 col-lg-4">
-      <div class="section2-cards card" >
-      <div class="text-center">
-        <div style="background-color:white ;" class="card-body">
-          <img  class="card-img-top" src="images/features-icon-1.png" alt="Card image cap">
-          <h5 class="card-title">Site Optimization</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <div class="section-card-containor col-xs-12 col-sm-4 col-lg-4">
+        <div class="section2-cards card">
+          <div class="text-center">
+            <div style="background-color:white ;" class="card-body">
+              <img class="card-img-top" src="images/features-icon-1.png" alt="Card image cap">
+              <h5 class="card-title">Site Optimization</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 
-          <button class="cover-button">READ MORE</button>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div   class=" col-xs-12 col-sm-4 col-lg-4">
-      <div class="card section2-cards"  >
-      <div class="text-center">
-        <div style="background-color:white ;" class="card-body">
-          <img  class="card-img-top" src="images/features-icon-1.png" alt="Card image cap">
-          <h5 class="card-title">Email Design</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-          <button class="cover-button">READ MORE</button>
-        </div>
+              <button class="cover-button">READ MORE</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="section-card-containor col-xs-12 col-sm-4 col-lg-4">
+        <div class="card section2-cards">
+          <div class="text-center">
+            <div style="background-color:white ;" class="card-body">
+              <img class="card-img-top" src="images/features-icon-1.png" alt="Card image cap">
+              <h5 class="card-title">Email Design</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 
-  </div>
-  <div class="row"  style="background-image: url(images/left-bg-decor.png);background-repeat: no-repeat;background-size: 100% ;">
-    <div class="col-xs-12 col-sm-6 col-lg-6">
-     <img style="max-width: 100%;max-height: 100%;" src="images/left-image.png">
-    </div>
+              <button class="cover-button">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="col-xs-12 col-sm-6 col-lg-6">
-      <div style="margin-bottom:8% ;" class="container">
-        <img class="mini-image" src="images/about-icon-01.png">
-        <p class="mini-img-para">
-          <span class="vertical-row-style">
-            Vestibulum Pulint taehp
-          </span><br>
+    </div>
+    <div style="padding-top: 15%" class="row"
+      style="background-image: url(images/left-bg-decor.png);background-repeat: no-repeat;background-size: 100% ;">
+      <div class="col-xs-12 col-sm-6 col-lg-6">
+        <img style="max-width: 100%;max-height: 100%;" src="images/left-image.png">
+      </div>
+
+      <div class="vertical-trio-padding col-xs-12 col-sm-6 col-lg-6">
+        <div style="margin-bottom:8%;" class="container">
+          <img class="mini-image" src="images/about-icon-01.png">
+          <p class="mini-img-para">
+            <span class="vertical-row-style">
+              Vestibulum Pulint taehp
+            </span><br>
             It is a long established fact that a reader will be distracted by the readable
             content of a page when looking at its layout.The point of using Lorem Ipsum is
-             that it has a more-or-less normal distribution of letters, as opposed to
-        </p>
-      </div>
-      <br>
-      <div style="margin-bottom:8% ;" class="container">
-        <img class="mini-image" src="images/about-icon-01.png">
-        <p class="mini-img-para">
-          <span class="vertical-row-style">
-            Vestibulum Pulint taehp
-          </span><br>
+            that it has a more-or-less normal distribution of letters, as opposed to
+          </p>
+        </div>
+        <br>
+        <div style="margin-bottom:8% ;" class="container">
+          <img class="mini-image" src="images/about-icon-01.png">
+          <p class="mini-img-para">
+            <span class="vertical-row-style">
+              Vestibulum Pulint taehp
+            </span><br>
             It is a long established fact that a reader will be distracted by the readable
             content of a page when looking at its layout.The point of using Lorem Ipsum is
-             that it has a more-or-less normal distribution of letters, as opposed to
-        </p>
-      </div>
-      <br>
-      <div class="container">
-        <img class="mini-image" src="images/about-icon-01.png">
-        <p class="mini-img-para">
-          <span class="vertical-row-style">
-            Vestibulum Pulint taehp
-          </span><br>
+            that it has a more-or-less normal distribution of letters, as opposed to
+          </p>
+        </div>
+        <br>
+        <div class="container">
+          <img class="mini-image" src="images/about-icon-01.png">
+          <p class="mini-img-para">
+            <span class="vertical-row-style">
+              Vestibulum Pulint taehp
+            </span><br>
             It is a long established fact that a reader will be distracted by the readable
             content of a page when looking at its layout.The point of using Lorem Ipsum is
-             that it has a more-or-less normal distribution of letters, as opposed to
-        </p>
+            that it has a more-or-less normal distribution of letters, as opposed to
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- next row -->
-  <div class="row" style="background-color: rgb(224, 241, 41)">
+    <!-- next row -->
+    <div style="padding-top:15%" class="row">
 
 
-    <div class="col-xs-12 col-sm-12 col-lg-12">
-      <h3>What They Think <span style="color:#ff8b26 ;">About Us</span></h3>
-      <pre style="font-family: Verdana;">
+      <div class="col-xs-12 col-sm-12 col-lg-12">
+        <h3>What They Think <span style="color:#ff8b26 ;">About Us</span></h3>
+        <pre style="font-family: Verdana;">
         All the Lorem Ipsum generators on the Internet tend to repeat
         predefined chunks as necessary, making generator on the Internet.
       </pre>
-    </div>
-  </div>
-
-  <div class="row" style="padding-bottom: 400px;height: 300px;background-color: antiquewhite;">
-
-    <div class=" col-xs-12 col-sm-4 col-lg-4">
-     <div class="container text-center author-container" >
-      <img class="author-img" src="images/testimonial-author-1.png" >
-      <p  class="author-para">&#9733 &#9733 &#9733 &#9733 &#9733
-        <br>
-        <span class="author-name">
-          Jonathan Smart<br>
-        </span>
-        Sed ut perspiciatis totam rem aperiam, eaque ipsa quae ab illo inventore
-
-      </p>
-     </div>
+      </div>
     </div>
 
-    <div class="author-card col-xs-0 col-sm-4 col-lg-4">
-      <div class="container text-center author-container" >
-        <img class="author-img" src="images/testimonial-author-1.png" >
-        <p  class="author-para">&#9733 &#9733 &#9733 &#9733 &#9733
-          <br>
-          <span class="author-name">
-            Jonathan Smart<br>
-          </span>
-          Sed ut perspiciatis totam rem aperiam, eaque ipsa quae ab illo inventore
+    <div class="row authors" style="padding-bottom: 400px;height: 300px;">
 
-        </p>
-       </div>
+      <div class=" col-xs-12 col-sm-4 col-lg-4">
+        <div class="container text-center author-container">
+          <img class="author-img" src="images/testimonial-author-1.png">
+          <p class="author-para">&#9733 &#9733 &#9733 &#9733 &#9733
+            <br>
+            <span class="author-name">
+              Jonathan Smart<br>
+            </span>
+            Sed ut perspiciatis totam rem aperiam, eaque ipsa quae ab illo inventore
+
+          </p>
+        </div>
+      </div>
+
+      <div class="author-card col-xs-0 col-sm-4 col-lg-4">
+        <div class="container text-center author-container">
+          <img class="author-img" src="images/testimonial-author-1.png">
+          <p class="author-para">&#9733 &#9733 &#9733 &#9733 &#9733
+            <br>
+            <span class="author-name">
+              Jonathan Smart<br>
+            </span>
+            Sed ut perspiciatis totam rem aperiam, eaque ipsa quae ab illo inventore
+
+          </p>
+        </div>
+      </div>
+
+      <div class="author-card col-xs-0 col-sm-4 col-lg-4">
+        <div class="btn text-center author-container"
+          style="color: white;border-radius:10px;height:70px;width:70px;margin-top:90px;margin-left:20px;padding-top:20px">
+
+          < <div class="btn text-center author-container"
+            style="color:white;border-radius:10px;height:70px;width:70px;margin-top:5px;margin-left:20px;padding-top:20px">
+            >
+        </div>
+      </div>
     </div>
-
-    <div class="author-card col-xs-0 col-sm-4 col-lg-4">
-      <div class="btn text-center author-container" style="color: white;border-radius:10px;height:70px;width:70px;margin-top:90px;margin-left:20px;padding-top:20px" >
-
-<
+    <!-- row1 -->
 
 
-        <div class="btn text-center author-container" style="color:white;border-radius:10px;height:70px;width:70px;margin-top:5px;margin-left:20px;padding-top:20px" >
-          >
+    <div class="footer-mg">
+      <div class="footer footer-direction">
+        <div class="footer">
+          <div class="footer-form">
+            <div class="form-text-input">
+              <input type="text" class="form-input" placeholder="Enter name">
+              <input type="text" class="form-input" placeholder="Enter Email">
+
+            </div>
+            <input type="textarea" class="form-input form-textarea" placeholder="Your Message">
+            <button class="cover-button">SEND MESSAGE NOW</button>
+
           </div>
-       </div>
+
+          <div class="footer-intro">
+
+            <h1 class="footer-into-h1">more about <span class="footer-into-lava"> Lava</span></h1>
+            <p class="footer-into-p">Lorem ipsum dolor sit amet, consectetur adipisicing eos, ea quis delectus. Saepe ut
+              soluta cupiditate?</p>
+            <p class="footer-into-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="footer-icons-containor">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+
+              <a href="#" class="fa fa-youtube"></a>
+
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-wifi"></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer-line"></div>
+        <div class="footer-txt">copyright &copy Lava landing page | Designed by Umber Zahid</div>
+
+
+
+      </div>
+
     </div>
 
-  </div>
-  <footer style="height: 500px ;background-size:cover ;background-repeat: no-repeat;background-image: url(images/footer-bg.png);">
 
-  </footer>
-  <!-- background-position:center;background-size:cover -->
+
+
+  </div>
+
+
+
 
 </body>
-<!--
-
-<ul class="navbar-nav mr-auto">
-  <li  class="nav-item active" >
-    <a class="nav-link">HOME </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" >ABOUT</a>
-  </li>
-
-  <li class="nav-item">
-    <a id="a" class="nav-link disabled" >TESTIMONIALS</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link disabled dropdown-toggle" >
-      DROP DOWN
-    </a>
-
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" >CONTACT US</a>
-  </li>
-</ul> -->
